@@ -1,33 +1,4 @@
-/*
 
-TemplateMo 558 Klassy Cafe
-
-https://templatemo.com/tm-558-klassy-cafe
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 /* 
 ---------------------------------------------
@@ -82,7 +53,7 @@ nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #000;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -115,7 +86,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: #000;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -154,10 +125,13 @@ body {
   border-radius: 3px;
   font-weight: 600;
   transition: all .3s;
+  margin-left: 100px;
 }
 
 .main-white-button a:hover {
   opacity: 0.9;
+  color: black;
+  background: yellow;
 }
 
 .main-text-button a {
@@ -188,7 +162,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #fb5849;
+  background-color: white;
 }
 
 .section-heading h2 {
@@ -197,7 +171,7 @@ body {
   margin-bottom: 25px; 
   font-size: 30px;
   font-weight: 900;
-  color: #2a2a2a;
+  color: white;
 }
 
 
@@ -866,7 +840,7 @@ offers
 */
 
 #offers {
-  padding-top: 120px;
+  padding-top: 20px;
 }
 
 #offers .section-heading {
@@ -907,7 +881,7 @@ offers
   width: 100%;
   display: inline-block;
   font-size: 15px;
-  color: #2a2a2a;
+  color: white;
   font-weight: 600;
   transition: all 0.3s;
   text-align: center;
@@ -918,7 +892,7 @@ offers
   margin: 0 auto 15px auto;
 }
 #offers #tabs ul .ui-tabs-active a {
-  color: #fb5849;
+  color: yellow;
   position: relative;
 }
 #offers #tabs ul .ui-tabs-active span {
@@ -945,13 +919,14 @@ offers
   padding-top: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: white;
   margin-bottom: 10px;
   margin-right: 100px;
 }
 
 #offers .tabs-content p {
   margin-right: 100px;
+  color: grey;
 }
 
 #offers .tabs-content .left-list {
@@ -968,14 +943,14 @@ offers
   right: 0;
   width: 70px;
   height: 70px;
-  background-color: #fb5849;
+  background-color: yellow;
   display: inline-block;
   text-align: center;
   line-height: 70px;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 
@@ -1069,6 +1044,11 @@ responsive
     font-size: 14px;
     letter-spacing: 0px;
   }
+
+  .main-white-button a {
+    margin-left: -10px;
+  
+}
   #top .left-content {
     text-align: center;
     padding: 25% 0px;
