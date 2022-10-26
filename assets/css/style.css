@@ -408,7 +408,8 @@ menu
 .card {
   margin: 0 auto;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 200px;
+  max-height: 230px;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -416,43 +417,65 @@ menu
 }
 
 .card1 {
-  background-image: url(../images/menu-item-01.jpg);
+  background-image: url(../images/TheBigBrekkie.PNG);
 }
 .card2 {
-  background-image: url(../images/menu-item-02.jpg);
+  background-image: url(../images/WagyuBeefBurger.PNG);
 }
 .card3 {
-  background-image: url(../images/menu-item-03.jpg);
+  background-image: url(../images/crabpasta.PNG);
+
 }
 .card4 {
-  background-image: url(../images/menu-item-04.jpg);
+  background-image: url(../images/crabtuffleroll.PNG);
 }
 .card5 {
-  background-image: url(../images/menu-item-05.jpg);
+  background-image: url(../images/avacadotoast.PNG);
+}
+.card6 {
+  background-image: url(../images/nasilemakwithchicken.PNG);
 }
 
 .info {
   position: relative;
   width: 100%;
-  background-color: black;
-  border: 1px solid white;
-  transform: translateY(100%)
-  translateY(120px)
-  translateZ(0);
-  transition: transform 0.5s ease-out;
 }
 
-.card:hover .info,
+.overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0,0,0,0.5),#fcff00);
+        opacity: 0;
+        transition: 1s;
+    }
+
+/*.card:hover .info,
 .card:hover .info:before {
-  transform: translateY(200px) translateZ(0);
+  transform: translateY(100px) translateZ(0);
 }
+*/
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
 
 .title {
-  margin: 0;
-  padding: 30px 30px 20px 30px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+  margin-top: 150px;
+  color: black;
+  text-align: center;
+  font-size: 23px;
+  opacity: 0;
+}
+
+.card:hover .title{
+  bottom: 30%;
+  opacity: 1;
+  transition: 2s;
 }
 
 .description {
@@ -1181,6 +1204,15 @@ responsive
   #about .right-content {
     margin-left: 0px;
     margin-top: 30px;
+  }
+
+  .card {
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
   }
 
   #menu .section-heading{
