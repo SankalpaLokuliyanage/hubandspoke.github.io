@@ -402,6 +402,7 @@ menu
 
 #menu .section-heading {
   margin-bottom: 80px;
+  margin-top: 120px;
 }
 
 .card {
@@ -954,6 +955,56 @@ offers
 }
 
 
+
+
+.discount_section {
+    width: 100%;
+    float: left;
+    padding-top: 150px;
+    /*background-image: url(../images/client-bg.png);*/
+    background-size: 100%;
+
+}
+
+.discount_bg {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f2b416;
+    height: auto;
+    padding: 40px 40px 40px 24px;
+    text-align: center;
+}
+
+.discount_bg p {
+  font-size: 62px;
+  line-height: 80px;
+}
+
+.discount_bg::after {
+    content: '';
+    background-image: url(../images/left-icon.png);
+    position: absolute;
+    height: 165px;
+    width: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    left: 120px;
+    margin-top: -70px;
+}
+.discount_bg::before {
+    content: '';
+    background-image: url(../images/right-icon.png);
+    position: absolute;
+    height: 165px;
+    width: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    left: 79%;
+    margin-top: -93px;
+}
+
+
+
 /* 
 ---------------------------------------------
 footer
@@ -1027,7 +1078,6 @@ responsive
 
 @media (max-width: 992px) {
   #top {
-    
     height: auto;
   }
   .header-area .main-nav .nav li.submenu:after {
@@ -1049,13 +1099,38 @@ responsive
     margin-left: -10px;
   
 }
+
+.discount_bg::before { width: 0%; }
+.discount_bg::after { width: 0%;}
+
+.discount_section {
+  margin-top: -100px;
+}
+
+.discount_bg p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
   #top .left-content {
     text-align: center;
     padding: 25% 0px;
   }
+
+  #top .Modern-Slider {
+    height:100%;
+  max-height: 700px;
+  background:#000;
+  }
   #about .right-content {
     margin-left: 0px;
     margin-top: 30px;
+  }
+
+  #menu .section-heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
   #chefs .chef-item {
     margin-bottom: 30px;
