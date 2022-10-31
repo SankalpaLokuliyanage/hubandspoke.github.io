@@ -1345,16 +1345,17 @@ responsive
   }
 
   .currently-market .item .left-image {
-    width: 50%;
-     margin-right: 60px;
-     margin-left: 15px;
+    width: 100%;
+     
   
   }
 
   .currently-market .item .right-content {
-    margin-top: 190px;
-    margin-right: 90px;
-    margin-left: -140px;
+    position: relative;
+    margin-top: 220px;
+    margin-right: 100px;
+    margin-left: -250px;
+    
   }
 
   .currently-market .item .right-content .size h6 {
