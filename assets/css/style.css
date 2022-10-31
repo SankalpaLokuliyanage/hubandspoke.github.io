@@ -653,6 +653,10 @@ Currently Market Style
   margin-bottom: 30px;
 }
 
+.currently-market .item .left-image img {
+  position: relative;
+}
+
 .currently-market .item .right-content {
   margin-left: 30px;
   width: 100%;
