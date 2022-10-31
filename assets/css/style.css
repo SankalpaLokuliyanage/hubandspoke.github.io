@@ -1382,11 +1382,15 @@ responsive
   .currently-market .item .right-content {
     margin-top: 190px;
     margin-right: 90px;
-    margin-left: -150px;
+    margin-left: -140px;
   }
 
   .currently-market .item .right-content .size h6 {
     margin-top: -120px;
+  }
+
+  .currently-market .item .row .column-2 {
+    margin-left: -30px;
   }
 
 
