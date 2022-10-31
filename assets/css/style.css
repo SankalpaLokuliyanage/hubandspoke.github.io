@@ -655,6 +655,7 @@ Currently Market Style
 
 .currently-market .item .left-image img {
   position: relative;
+
 }
 
 .currently-market .item .right-content {
@@ -1345,7 +1346,9 @@ responsive
 
   .currently-market .item .left-image {
     width: 50%;
-    margin-left: 50px;
+     margin-right: 60px;
+     margin-left: 15px;
+  
   }
 
   .currently-market .item .right-content {
