@@ -405,6 +405,39 @@ menu
   margin-top: 120px;
 }
 
+#menu .item .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.item .thumb:hover .hover-effect {
+  visibility: visible;
+  opacity: 1;
+  right: 30px;
+  left: 30px;
+  top: 80px;
+  bottom: 40px;
+}
+
+.item .thumb .hover-effect {
+  position: absolute;
+  right: 0%;
+  bottom: 30px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(64, 66, 69, 0.9);
+  background: linear-gradient(#000,rgba(0,0,0,0.5));
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.item .hover-effect .content h4 {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: white;
+}
+
 .card {
   margin: 0 auto;
   max-width: 100%;
@@ -418,6 +451,7 @@ menu
 
 .card1 {
   background-image: url(../images/TheBigBrekkie.PNG);
+  border-radius: 30px;
 }
 .card2 {
   background-image: url(../images/WagyuBeefBurger.PNG);
@@ -441,17 +475,7 @@ menu
   width: 100%;
 }
 
-.overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        border-radius: 8px;
-        cursor: pointer;
-        background: linear-gradient(rgba(0,0,0,0.5),#fcff00);
-        opacity: 0;
-        transition: 1s;
-    }
+
 
 /*.card:hover .info,
 .card:hover .info:before {
@@ -569,6 +593,162 @@ menu
   content: '\f105';
 }
 
+
+/* 
+---------------------------------------------
+Currently Market Style
+--------------------------------------------- 
+*/
+
+.currently-market {
+  position: relative;
+}
+
+.currently-market-item {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.currently-market .section-heading {
+  text-align: left;
+}
+
+.currently-market .section-heading .line-dec {
+  margin-left: 0;
+}
+
+.currently-market .filters {
+  text-align: right;
+}
+
+.currently-market .filters ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.currently-market .filters ul li:first-child {
+  margin-left: 0px;
+}
+
+
+.currently-market .filters ul li.active,
+.currently-market .filters ul li:hover {
+  background-color: #fdff0d;
+  color: black;
+}
+
+.currently-market .item {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.currently-market .item .right-content {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.currently-market .item .right-content h4 {
+  font-size: 18px;
+  margin-top: 25px;
+  color: white;
+}
+
+.currently-market .item .right-content .price {
+  position: relative;
+  background-color: #fdff0d;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.currently-market .item .right-content .size {
+  position: absolute;
+  color: white;
+}
+
+.currently-market .item .right-content .cont {
+  color: white;
+  margin-top: 30px;
+  margin-left: -90px;
+
+}
+
+.currently-market .item .row .column-1, .column-2, .column-3{
+  padding: 10px;
+}
+
+.currently-market .item .row .column-1 h4{
+  font-size: 16px;
+}
+
+.currently-market .item .row .column-2 {
+  margin-top: 20px;
+}
+.currently-market .item .row .column-3 {
+  margin-top: 2px;
+}
+
+.currently-market .item .row .column-2 h6{
+  margin-left: 19px;
+  font-size: 14px;
+}
+
+.currently-market .item .row .column-3 h6{
+  font-size: 14px;
+}
+
+
+.currently-market .item .line-dec {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.currently-market .item span strong {
+  font-size: 20px;
+}
+
+.currently-market .item span.bid {
+  line-height: 35px;
+}
+
+.currently-market .item span.bid em,
+.currently-market .item span.ends em {
+  font-style: normal;
+}
+
+.currently-market .item span.ends {
+  text-align: right;
+  float: right;
+  line-height: 35px;
+}
+
+.currently-market .item .text-button {
+  margin-top: 40px;
+}
+
+.currently-market .item .text-button a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #7453fc;
+  border-bottom: 1px solid #7453fc;
+}
 
 /*
 ---------------------------------------------
@@ -1178,6 +1358,36 @@ responsive
   
 }
 
+.currently-market .section-heading {
+    margin-bottom: 50px;
+  }
+  .currently-market-item {
+    width: 100%;
+  }
+  
+  .currently-market .filters {
+    text-align: center;
+  }
+  .currently-market .filters {
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+
+  .currently-market .item .left-image {
+    width: 10%;
+    margin-left: 10px;
+  }
+
+  .currently-market .item .right-content {
+    margin-top: 190px;
+    margin-right: 70px;
+  }
+
+  .currently-market .item .right-content .size h6 {
+    margin-top: -120px;
+  }
+
+
 .discount_bg::before { width: 0%; }
 .discount_bg::after { width: 0%;}
 
@@ -1204,6 +1414,21 @@ responsive
   #about .right-content {
     margin-left: 0px;
     margin-top: 30px;
+  }
+
+  #menu .item .thumb:hover .hover-effect {
+  visibility: visible;
+  opacity: 1;
+  right: 50px;
+  left: 50px;
+  padding-left: 40px;
+  padding-right: 10px;
+  bottom: 60px;
+  top: 120px;
+}
+
+  #menu .item .thumb h4 {
+    font-size: 20px;
   }
 
   .card {
@@ -1328,3 +1553,52 @@ responsive
     opacity: 0;
   }
 }
+
+
+.parallax-window {
+    min-height: 1064px;
+    background: transparent;
+}
+
+.tm-text-yellow {
+    color: #FC6;
+}
+
+.tm-text-gold {
+    color: #CC9966;
+}
+
+.tm-text-brown {
+    color: #544639;
+}
+
+.tm-text-green {
+    color: #006666;
+}
+
+a.tm-bg-green:hover {
+    background-color: #0a8585;
+}
+
+.tm-bg-brown {
+    background-color: #544639;
+}
+
+.tm-bg-green {
+    background-color: #006666;
+}
+
+.tm-border-gold {
+    border-color: #CC9966;
+}
+
+.tm-intro-width {
+    max-width: 436px;
+}
+
+.tm-item-container {
+    max-width: 520px;
+}
+
+
+
