@@ -1591,16 +1591,7 @@ a.tm-bg-green:hover {
 
 
 
-.body_img::before {
-     position: absolute;
-     content: "";
-     width: 60px;
-     background-position: center;
-     background-repeat: no-repeat;
-     top: 0;
-     bottom: 0;
-     left: -40px;
-}
+
 
 .body_img figure {
      margin: 0;
@@ -1608,5 +1599,5 @@ a.tm-bg-green:hover {
 }
 
 .body_img figure img {
-     width: 100%;
+     width: 50%;
 }
