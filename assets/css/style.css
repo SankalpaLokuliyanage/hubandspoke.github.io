@@ -1595,7 +1595,6 @@ a.tm-bg-green:hover {
      position: absolute;
      content: "";
      width: 60px;
-     background: url(../images/border.png);
      background-position: center;
      background-repeat: no-repeat;
      top: 0;
