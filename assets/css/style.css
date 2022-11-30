@@ -653,11 +653,16 @@ Currently Market Style
   padding: 30px;
   display: flex;
   margin-bottom: 30px;
+  transition: .5s;
 }
 
 .currently-market .item .left-image img {
   position: relative;
 
+}
+
+.currently-market .item:hover {
+  transform: scale(1.2);
 }
 
 .currently-market .item .right-content {
